@@ -88,6 +88,3 @@ User asks question → Agent runs Apex Action → Apex returns wrapper data
 → Lightning Type maps data to LWC → Custom component renders in chat
 ```
 
-## Learn More
-
-See [`lightning_types_blog_guide.md`](lightning_types_blog_guide.md) for the full step-by-step guide.
