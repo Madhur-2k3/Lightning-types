@@ -1,0 +1,55 @@
+<template>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <lightning-icon icon-name="standard:home" size="small"></lightning-icon>
+            <span class="header-title">Property Search Results</span>
+        </div>
+
+        <!-- Summary -->
+        <template lwc:if={summaryMessage}>
+            <div class="summary">
+                <span class="summary-text">{summaryMessage}</span>
+                <span class="badge">{totalCount}</span>
+            </div>
+        </template>
+
+        <!-- Property Cards -->
+        <template lwc:if={hasData}>
+            <div class="card-list">
+                <template for:each={items} for:item="property">
+                    <div key={property.id} class="property-card">
+                        <div class="card-header">
+                            <span class="property-name">{property.propertyName}</span>
+                            <span class="status-badge">{property.status}</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="detail-row">
+                                <lightning-icon icon-name="utility:location" size="xx-small"></lightning-icon>
+                                <span class="detail-text">{property.city}, {property.state}</span>
+                            </div>
+                            <div class="detail-row">
+                                <lightning-icon icon-name="utility:company" size="xx-small"></lightning-icon>
+                                <span class="detail-text">{property.propertyCategory}</span>
+                            </div>
+                            <template lwc:if={property.propertySubCategory}>
+                                <div class="detail-row">
+                                    <lightning-icon icon-name="utility:layers" size="xx-small"></lightning-icon>
+                                    <span class="detail-text">{property.propertySubCategory}</span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <!-- Empty State -->
+        <template lwc:if={noData}>
+            <div class="empty-state">
+                <lightning-icon icon-name="utility:search" size="large"></lightning-icon>
+                <p class="empty-text">No properties found</p>
+            </div>
+        </template>
+    </div>
+</template>

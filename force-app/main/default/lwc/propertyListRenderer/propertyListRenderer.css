@@ -1,0 +1,128 @@
+/* ── Container ── */
+.container {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+/* ── Header ── */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #0176d3, #1b96ff);
+    color: #ffffff;
+}
+
+.header-title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ── Summary ── */
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #f3f3f3;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-text {
+    font-size: 13px;
+    color: #444;
+}
+
+.badge {
+    background: #0176d3;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 12px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* ── Card List ── */
+.card-list {
+    padding: 8px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ── Property Card ── */
+.property-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 12px;
+    transition: box-shadow 0.15s ease;
+}
+
+.property-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.property-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #181818;
+}
+
+.status-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: #2e844a;
+    background: #e6f7ec;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+/* ── Card Body ── */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detail-text {
+    font-size: 13px;
+    color: #555;
+}
+
+/* ── Empty State ── */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    color: #999;
+}
+
+.empty-text {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Property List By City",
+  "description": "Property List By City",
+  "lightning:type": "@apexClassType/c__PropertyController$PropertiesDataWrapper"
+}
